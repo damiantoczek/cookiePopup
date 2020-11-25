@@ -1,0 +1,22 @@
+<link defer rel="stylesheet" href="cookiePopup.min.css">
+<style media="screen">div#cookiePopup.hidden{opacity:0}</style>
+<div id="cookiePopup" class="hidden">
+  <div class="wrap">
+    <div class="text">
+      <p>Our website uses cookies and other data to deliver, maintain and improve our services and ads.</p>
+      <p>If you agree, we’ll personalise the content and ads that you see, based on your activity on Google services like Search, Maps and YouTube. We also have partners that measure how our services are used.
+      <a href="mywebsite.com/privacy">Privacy Policy</a>
+    </div>
+    <div class="settings">
+      <div class="checkboxes">
+        <div><input id="cookieF" type="checkbox" checked><label for="cookieF">Functionality</label></div>
+        <div><input id="cookieS" type="checkbox" checked><label for="cookieS">Analysis</label></div>
+        <div><input id="cookieM" type="checkbox" checked><label for="cookieM">Marketing</label></div>
+      </div>
+      <button id='cookiePopup_yes' type="button">Allow All</button>
+      <button id='cookiePopup_save' type="button">Save</button>
+      <button id='cookiePopup_no' type="button">Deny</button>
+    </div>
+  </div>
+</div>
+<script src="cookiePopup.js" charset="utf-8"></script>

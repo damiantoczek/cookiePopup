@@ -1,0 +1,64 @@
+$yesColor: #61ff61
+$saveColor: #ddd
+$noColor: #f00
+
+div#cookiePopup
+  position: fixed
+  bottom: 0
+  left: 0
+  right: 0
+  background-color: #fff
+  color: #000
+  opacity: 1
+  transition: opacity 1s ease
+  z-index: 1
+  display: flex
+  justify-content: center
+  border-top: 2px solid #151515
+  box-shadow: 0 0 1em #000
+  div.wrap
+    display: grid
+    grid-template-columns: 7fr 4fr
+    max-width: 960px
+  div.text
+    padding: 1em
+    p,a
+      margin: .5em
+  div.settings
+    display: flex
+    flex-flow: column
+    justify-content: center
+    align-items: center
+    padding: 1em
+    label:hover
+      opacity: .75
+      text-decoration: underline
+      cursor: pointer
+    input
+      &:checked
+        background-color: $yesColor
+      &:not(:checked)
+        background-color: $noColor
+    button
+      border-radius: .25rem
+      cursor: pointer
+      outline: none
+      &:hover
+        opacity: 0.75
+      &#cookiePopup_yes
+        margin: 0.5rem auto
+        padding: .75rem 1.5rem
+        font-size: 1em
+        background-color: $yesColor
+        border: 1px solid #000
+      &#cookiePopup_save
+        margin: 0 .5em
+        padding: .5em
+        background-color: $saveColor
+        border: 1px solid $saveColor
+      &#cookiePopup_no
+        border: none
+        background: none
+        color: $noColor
+        font-weight: bold
+        margin: .5em auto
